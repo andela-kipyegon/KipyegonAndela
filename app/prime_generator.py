@@ -1,6 +1,8 @@
 def prime_number(number):
 	prime_number=[]
 	divisibilty=True
+	if (isinstance(number, list)):
+                return 'Invalid Argument'
         if (isinstance(number, str)):
                 return 'Invalid Argument'
         if number > 0:

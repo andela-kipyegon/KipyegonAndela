@@ -11,6 +11,9 @@ class Tester(unittest.TestCase):
         self.assertEqual(prime_number(1),[])
     def test_return_list(self):
         self.assertTrue(isinstance(prime_number(12),list))
-    def test_zero(self):
-        self.assertEqual(prime_number(0),[])
-    
+    def test_null(self):
+        self.assertEqual(prime_number([1,2,3]),'Invalid Argument')
+    def test_list_length(self):
+        self.assertEqual(len(prime_number(5)),3)    
+
+   
