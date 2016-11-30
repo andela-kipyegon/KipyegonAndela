@@ -1,7 +1,15 @@
 def prime_number(number):
 	prime_number=[]
 	divisibilty=True
+	if (isinstance(number, complex)):
+                return 'Invalid Argument'
+        if (isinstance(number, tuple)):
+                return 'Invalid Argument'
+        if (isinstance(number, float)):
+                return 'Invalid Argument'
 	if (isinstance(number, list)):
+                return 'Invalid Argument'
+        if (isinstance(number, dict)):
                 return 'Invalid Argument'
         if (isinstance(number, str)):
                 return 'Invalid Argument'
