@@ -1,18 +1,16 @@
 def prime_number(number):
 	prime_number=[]
 	divisibilty=True
-	if (isinstance(number, complex)):
-                return 'Invalid Argument'
         if (isinstance(number, tuple)):
-                return 'Invalid Argument'
+                return 'Invalid tuple Argument'
         if (isinstance(number, float)):
-                return 'Invalid Argument'
+                return 'Invalid Float Argument'
 	if (isinstance(number, list)):
-                return 'Invalid Argument'
+                return 'Invalid list Argument'
         if (isinstance(number, dict)):
-                return 'Invalid Argument'
+                return 'Invalid dict Argument'
         if (isinstance(number, str)):
-                return 'Invalid Argument'
+                return 'Invalid string Argument'
         if number > 0:
                 for  i in range(2,(number+1)):
                         divisibilty=True
@@ -25,9 +23,6 @@ def prime_number(number):
         else:
                 return 'Only positive numbers'
 
-
-
-        
 
 
 
